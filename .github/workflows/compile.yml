@@ -1,0 +1,29 @@
+name: Compilar sketches de Arduino
+
+on:
+  push:
+    paths:
+      - '**.ino'
+      - '.github/workflows/compile.yml'
+  pull_request:
+    paths:
+      - '**.ino'
+      - '.github/workflows/compile.yml'
+
+jobs:
+  compilar:
+    name: Compilar para Arduino Uno
+    runs-on: ubuntu-latest
+    steps:
+      - name: Clonar el repo
+        uses: actions/checkout@v4
+
+      - name: Compilar sketches
+        uses: arduino/compile-sketches@v1
+        with:
+          fqbn: arduino:avr:uno
+          sketch-paths: |
+            - ./
+          libraries: |
+            - name: Keypad
+            - name: LiquidCrystal I2C
