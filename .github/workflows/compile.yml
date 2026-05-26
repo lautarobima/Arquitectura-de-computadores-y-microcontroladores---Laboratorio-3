@@ -25,5 +25,6 @@ jobs:
           sketch-paths: |
             - ./
           libraries: |
+            - name: Servo
             - name: Keypad
             - name: LiquidCrystal I2C
