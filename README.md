@@ -6,4 +6,3 @@ Tinkercad Parte 1 : [https://www.tinkercad.com/things/7keDfdV82ML/editel?shareco
 - Laura Catalina Hernández Rodríguez
 - Lautaro Facundo Biondo de Marco
 - Sangtiago Bedoya González
-- Juan Camilo Hernández Díaz 
